@@ -1,0 +1,4 @@
+build:
+  docker:
+    web: docker/nginx/Dockerfile
+    api: docker/api/Dockerfile
