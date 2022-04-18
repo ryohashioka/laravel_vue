@@ -45,3 +45,19 @@ $ exit
 ```bash
 $ php artisan migrate:refresh --seed
 ```
+
+# Heroku Deploy
+## ログイン
+```
+
+```
+* Heloku でアカウントを作成してください。
+
+## アプリ作成
+```
+$ heroku apps:create [アプリ名]
+$ heroku addons:add cleardb:ignite [アプリ名]
+$ heroku buildpacks:set heroku/php -a [アプリ名]
+$ heroku buildpacks:add heroku/nodejs -a [アプリ名]
+$ heroku stack:set container -a [アプリ名]
+```
