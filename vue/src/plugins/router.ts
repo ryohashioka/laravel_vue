@@ -14,6 +14,7 @@ const routes = [
   { path: '/api-sample', component: () => import('../components/pages/ApiSample.vue') },
   { path: '/v-if-sample', component: () => import('../components/pages/MyVIf.vue') },
   { path: '/slot-scope-sample', component: () => import('../components/pages/SlotScope.vue') },
+  { path: '/swiper-demo', component: () => import('../components/pages/Swiper.vue') },
 ]
 
 // 3. Create the router instance and pass the `routes` option

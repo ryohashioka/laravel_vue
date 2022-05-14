@@ -12,6 +12,7 @@
       <router-link to="/ref-sample">RefSample</router-link>
       <router-link to="/v-if-sample">VIfSample</router-link>
       <router-link to="/slot-scope-sample">SlotScopeSample</router-link>
+      <router-link to="/swiper-demo">SwiperDemo</router-link>
     </p>
     
     <router-view></router-view>
