@@ -15,6 +15,7 @@ const routes = [
   { path: '/v-if-sample', component: () => import('../components/pages/MyVIf.vue') },
   { path: '/slot-scope-sample', component: () => import('../components/pages/SlotScope.vue') },
   { path: '/swiper-demo', component: () => import('../components/pages/Swiper.vue') },
+  { path: '/dynamic-img', component: () => import('../components/pages/DynamicImgs.vue') },
 ]
 
 // 3. Create the router instance and pass the `routes` option
