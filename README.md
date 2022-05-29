@@ -41,6 +41,8 @@ $ exit
 
 ```bash
 $ heroku login
+$ heroku plugins:install buildpack-registry
+$ heroku plugins:install buildpacks
 $ heroku create
 $ heroku create -a <app-name>-api
 $ heroku buildpacks:add heroku-community/multi-procfile
