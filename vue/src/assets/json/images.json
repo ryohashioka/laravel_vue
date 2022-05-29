@@ -1,8 +1,8 @@
 [
-    "flower_cattleya",
-    "flower_hyacinth",
-    "flower_kuchinashi",
-    "flower_kuroyuri",
-    "flower_marigold",
-    "flower_ooinunofuguri"
+    { "name" : "flower_cattleya", "type": "png", "description": "text" },
+    { "name" : "flower_hyacinth", "type": "png", "description": "text" },
+    { "name" : "flower_kuchinashi", "type": "png", "description": "text" },
+    { "name" : "flower_kuroyuri", "type": "png", "description": "text" },
+    { "name" : "flower_marigold", "type": "png", "description": "text" },
+    { "name" : "flower_ooinunofuguri", "type": "png", "description": "text" }
 ]
