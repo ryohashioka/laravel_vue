@@ -11,6 +11,7 @@ const About = { template: '<div>About</div>' }
 const routes = [
   { path: '/', component: Home },
   { path: '/ref-sample', component: () => import('../components/pages/RefSample.vue') },
+  { path: '/create-user', component: () => import('../components/pages/CreateUser.vue') },
   { path: '/api-sample', component: () => import('../components/pages/ApiSample.vue') },
   { path: '/v-if-sample', component: () => import('../components/pages/MyVIf.vue') },
   { path: '/slot-scope-sample', component: () => import('../components/pages/SlotScope.vue') },

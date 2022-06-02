@@ -7,6 +7,12 @@ type Mutation {
         
     logout: String @guard
         @field(resolver: "AuthMutator@logout")
+
+    createUser(
+      name: String!,
+      email: String!,
+      password: String! @hash
+    ): User! @create
 }
 
 "Indicates what fields are available at the top level of a query operation."

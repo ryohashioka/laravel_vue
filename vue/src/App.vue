@@ -8,6 +8,7 @@
       <!-- specify the link by passing the `to` prop. -->
       <!-- `<router-link>` will render an `<a>` tag with the correct `href` attribute -->
       <router-link to="/">Home</router-link>
+      <router-link to="/create-user">CreateUser</router-link>
       <router-link to="/api-sample">ApiSample</router-link>
       <router-link to="/ref-sample">RefSample</router-link>
       <router-link to="/v-if-sample">VIfSample</router-link>

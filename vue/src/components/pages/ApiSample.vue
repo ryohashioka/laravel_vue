@@ -16,11 +16,16 @@ const login = () => {
     axios.post('/api/graphql', {
       query: `mutation {
         login(
-          email:"runolfsdottir.nolan@example.org", 
-          password:"password"
+          email:"${email.value}", 
+          password:"${password.value}"
         )
       }`,
     }).then(res => {
+      if(res.data.errors || !res.data.data.login) {
+        message.value = "ログインエラーが発生しました。";
+        return;
+      }
+      message.value = "ログインしました。";
       token.value = res.data.data.login;
       sessionStorage.setItem('token', token.value);
     })
@@ -37,6 +42,11 @@ const logout = () => {
       Authorization: `Bearer ${token.value}`,
     },
   }).then(res => {
+    if(res.data.errors) {
+      message.value = "ログインエラーが発生しました。";
+      return;
+    }
+    message.value = "ログアウトしました。";
     token.value = "";
     sessionStorage.setItem('token', "");
   })
