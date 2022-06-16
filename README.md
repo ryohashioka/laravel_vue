@@ -79,7 +79,7 @@ $ heroku addons:add cleardb -a <app-name>-api
 
 ### MySQL の URL を取得
 ```bash
-heroku config -a <app-name>-api | grep CLEARDB_DATABASE_URL
+$ heroku config -a <app-name>-api | grep CLEARDB_DATABASE_URL
 ```
 
 上記で取得できた URL のフォーマットから情報をメモしておく
